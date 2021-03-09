@@ -20,7 +20,6 @@ for y in range(0, len(array)):
 
 for j in range(0, k):
     array[j] = -1 * array[j]
-    print('iter')
 
 print(odd_sum)
 print(indexes)
