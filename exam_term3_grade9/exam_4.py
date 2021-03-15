@@ -1,25 +1,8 @@
 # ВАРИАНТ 4
-# ВВОД МАССИВА ЧЕРЕЗ ПРОБЕЛЫ ОДНОЙ СТРОКОЙ
-# НОМЕРА ЭЛЕМЕНТОВ МАССИВА СЧИТАЮТСЯ С 0 (ДЛЯ ЗАДАНИЯ 3)
 
-"""
-ПРИМЕР ВВОДА-ВЫВОДА:
-
-INPUT:
--4 -2 -1 4 4 6 3 -9
-5
-3
-
-OUTPUT:
--16
-3
-True
-[-4, 1, -1, 9, 4, 25, 3, 49]
-"""
-
-array = input().split()
-a = int(input())
-k = int(input())
+array = input('Введите массив: ').split()
+a = int(input('Введите a: '))
+k = int(input('Введите k: '))
 negative_sum = 0
 positive_a_count = 0
 negative_k_bool = False
@@ -39,7 +22,7 @@ for j in range(0, len(array)):
     if j % 2 != 0:
         array[j] = j ** 2
 
-print(negative_sum)
-print(positive_a_count)
-print(negative_k_bool)
-print(array)
+print('Задание 1, пункт 1:', negative_sum)
+print('Задание 1, пункт 2:', positive_a_count)
+print('Задание 2:', negative_k_bool)
+print('Задание 3:', array)

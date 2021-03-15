@@ -1,8 +1,9 @@
 # ВАРИАНТ 1
+
 import random
 
-a = int(input())
-k = int(input())
+a = int(input('Введите a: '))
+k = int(input('Введите k: '))
 array = [random.randint(-100, 100) for x in range(20)]
 odd_sum = 0
 indexes = []
@@ -21,7 +22,7 @@ for y in range(0, len(array)):
 for j in range(0, k):
     array[j] = -1 * array[j]
 
-print(odd_sum)
-print(indexes)
-print(positive_k_bool)
-print(array)
+print('Задание 1, пункт 1:', odd_sum)
+print('Задание 1, пункт 2:', indexes)
+print('Задание 2:', positive_k_bool)
+print('Задание 3:', array)
