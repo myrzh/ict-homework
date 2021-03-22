@@ -1,3 +1,5 @@
+# TASK 2
+
 array = [int(i) for i in input().split()]
 
 max_index = 0
