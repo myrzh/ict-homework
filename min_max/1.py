@@ -1,7 +1,7 @@
 import random
 
 
-array = [random.randint(50, 150) for x in range(20)]
+array = [random.randint(50, 150) for i in range(20)]
 min_index = 0
 max_index = 0
 
