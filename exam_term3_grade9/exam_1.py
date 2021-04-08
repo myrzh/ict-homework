@@ -25,4 +25,6 @@ for j in range(0, k):
 print('Задание 1, пункт 1:', odd_sum)
 print('Задание 1, пункт 2:', indexes)
 print('Задание 2:', positive_k_bool)
-print('Задание 3:', array)
+print('Задание 4:', array)
+
+# ЗАДАНИЯ 3 И 5 НЕ СДЕЛАНЫ

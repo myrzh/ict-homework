@@ -26,4 +26,6 @@ array[k+1] = 1 / array[k+1]
 print('Задание 1, пункт 1:', odd_sum)
 print('Задание 1, пункт 2:', div5_a_count)
 print('Задание 2:', negative_index)
-print('Задание 3:', array)
+print('Задание 4:', array)
+
+# ЗАДАНИЯ 3 И 5 НЕ СДЕЛАНЫ
