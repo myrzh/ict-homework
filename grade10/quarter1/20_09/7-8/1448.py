@@ -15,7 +15,9 @@ def bochek():
     exit()
 
 if len(n_input) == 1:
-    if n == 1:
+    if n == 0:
+        bochek()
+    elif n == 1:
         bochka()
     elif 2 <= n <= 4:
         bochki()
