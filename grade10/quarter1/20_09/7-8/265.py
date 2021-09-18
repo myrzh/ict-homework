@@ -12,3 +12,5 @@ else:
         print(parties * m + m)
     else:
         print(parties)
+
+### NOT DONE
