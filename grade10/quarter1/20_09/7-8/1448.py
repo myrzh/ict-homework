@@ -34,3 +34,5 @@ elif len(n_input) >= 2:
         bochki()
     elif 5 <= int(n_input[-1:]) <= 9:
         bochek()
+
+### BOCHKA
