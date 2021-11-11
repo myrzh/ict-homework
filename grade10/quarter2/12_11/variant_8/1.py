@@ -4,7 +4,7 @@ prev_max = 0
 for i in range(9999, 99999 + 1):
     n = i
     summ = 0
-    
+
     while n > 0:
         digit = n % 10
         summ = summ + digit
