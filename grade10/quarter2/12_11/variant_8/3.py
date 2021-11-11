@@ -1,11 +1,11 @@
 from random import randint
 
 
+array = [randint(-100, 100) for i in range(100)]
+
 prev_num = array[0]
 pairs_count = 0
 prev_max = -9999
-
-array = [randint(-100, 100) for i in range(100)]
 
 for i in array[1:]:
     act_num = i
