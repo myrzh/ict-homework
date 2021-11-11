@@ -16,6 +16,7 @@ for i in array[1:]:
             pairs_count += 1
             if pair_sum < prev_min:
                 prev_min = pair_sum
+    prev_num = i
 
 print(pairs_count)
 print(prev_min)
