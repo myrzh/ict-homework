@@ -9,7 +9,7 @@ def numb_sum(n):
 def numb_reverse(n):
     reversed_numb = ''
     while n > 0:
-        reversed_numb += n % 10
+        reversed_numb += str(n % 10)
         n //= 10
     return int(reversed_numb)
 
