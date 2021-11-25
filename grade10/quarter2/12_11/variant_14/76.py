@@ -8,5 +8,4 @@ for i in range(1007, 746001 + 1):
                 if i > max_num:
                     max_num = i
 
-print(count)
-print(max_num)
+print(count, max_num)

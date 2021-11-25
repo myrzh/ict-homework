@@ -1,8 +1,13 @@
-from random import randint
+import os
 
 
-array = [randint(0, 10000) for i in range(100)]
-
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '17-10.txt')
+with open(filename , 'r') as f:
+    array = f.readlines()
+for i in range(0, len(array)):
+    array[i] = array[i].rstrip()
+    
 prev_num = array[0]
 pairs_count = 0
 prev_min = 21000
