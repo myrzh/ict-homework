@@ -1,37 +1,42 @@
-from random import randint
+import os
 
 
-def bin_search_steps(numbs_list, number_to_find):
-    steps = 0
-    left = 0
-    right = len(numbs_list) - 1
-    while left <= right:
-        steps += 1
-        middle = left + (right - left) // 2
-        if numbs_list[middle] == number_to_find:
-            return steps
-        elif numbs_list[middle] < number_to_find:
-            left = middle + 1
-        else:
-            right = middle - 1
-    return -1
+# def bubble_sort(arr):
+#     n = len(arr)
+#     for i in range(n-1):
+#         for j in range(0, n-i-1):
+#             if arr[j] > arr[j + 1] :
+#                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n-1):
-        for j in range(0, n-i-1):
-            if arr[j] > arr[j + 1] :
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '26-70.txt')
+with open(filename , 'r') as f:
+    array = f.readlines()
+for i in range(0, len(array)):
+    array[i] = array[i].rstrip()
+
+result = []
+ 
+#  перебор всех сумм с помощью рекурсии
+def ban(result, v, index, curSum):
+    if index < len(v):
+        curSum += v[index]
+        r = index
+        while r < len(v):
+            print('YASS')
+            r += 1
+            if ban(result, v, r, curSum) > 0:
+                result.append(ban(result, v, r, curSum))
+    return curSum
 
 
-arr = [randint(0, 100) for i in range(32)]
-bubble_sort(arr)
-steps_list = []
-
-for i in [randint(0, 100) for x in range(1000)]:
-    new_steps = bin_search_steps(arr, i)
-    if new_steps != -1:
-        steps_list.append(new_steps)
-
-print(sum(steps_list) / len(steps_list))
+# нахождение всех сумм элементов массива v
+for y in range(len(array)):
+    array[y] = int(array[y])
+for i in range(len(array)):
+    if ban(result, array, i, 0) > 0:
+        result.append(ban(result, array, i, 0))
+    if array[i] > 0:
+        result.append(array[i])
+print(result)
