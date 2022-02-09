@@ -1,16 +1,15 @@
-f = open('k7-45.txt')
+f = open('k7a-1.txt')
 array = f.readlines()[0]
-array += 'A'
+array += 'E'
+alph = ['A', 'B', 'C']
 
 max_len = 0
-prev = array[0]
 len_s = []
-for i in array[1:]:
-    if i == prev == 'C':
+for i in array:
+    if i in alph:
         max_len += 1
     else:
         len_s.append(max_len)
         max_len = 1
-    prev = i
 
 print(max(len_s))
