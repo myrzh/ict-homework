@@ -10,7 +10,7 @@ for i in array:
         max_len += 1
     else:
         len_s.append(max_len)
-        max_len = 1
+        max_len = 0
 
 print(max(len_s))
 
