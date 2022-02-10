@@ -1,3 +1,6 @@
+from random import randint
+
+
 def bin_search(numbs_list, number_to_find):
     steps = 0
     left = 0
@@ -24,7 +27,7 @@ def bubble_sort(arr):
 
 def main():
     print('Массив:')
-    array = [int(i) for i in input().split()]
+    array = [randint(1, 100) for i in range(10)]
     bubble_sort(array)
     print('После сортировки:')
     print(*array)
