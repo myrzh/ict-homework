@@ -26,8 +26,9 @@ def bubble_sort(arr):
 
 
 def main():
-    print('Массив:')
     array = [randint(1, 100) for i in range(10)]
+    print('Массив:')
+    print(*array)
     bubble_sort(array)
     print('После сортировки:')
     print(*array)
@@ -37,7 +38,14 @@ def main():
     if search_res != -1:
         print(f'Число {numb} найдено.')
     else:
-        
+        array.append(numb)
+        bubble_sort(array)
+        x = bin_search(array, numb)
+        if abs(array[x] - array[x + 1]) <= abs(array[x] - array[x - 1]):
+            numb_new = array[x + 1] 
+        else:
+            numb_new = array[x - 1]
+        print(f'Число {numb} не найдено. Ближайшее число {numb_new}')
 
 
 if __name__ == "__main__":
