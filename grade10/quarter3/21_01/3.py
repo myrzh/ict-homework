@@ -13,5 +13,3 @@ for i in array:
         max_len = 0
 
 print(max(len_s))
-
-# TODO: THE TASK
