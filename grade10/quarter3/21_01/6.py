@@ -1,20 +1,15 @@
 f = open('k7-m1.txt')
-array = f.readlines()[0]
-array += 'A'
+a = f.readline()
+rang = 0
+maxx = 0
 
-max_len = 0
-prev = array[0]
-len_s = []
-for i in array[1:]:
-    if i == prev == 'C':
-        max_len += 1
-    else:
-        len_s.append(max_len)
-        max_len = 1 
-    prev = i
 
-print(min(len_s))
-print(len(len_s))
-print(len(array) - 1)
+for i in range(len(a)):
+    if a[i] == 'C':
+        rang = rang + 1
+        if rang > maxx: 
+            maxx = rang
+    else: rang = 0
 
-# TODO: FINISH THE TASK
+
+print(maxx) 
