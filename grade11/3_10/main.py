@@ -1,11 +1,21 @@
 def func_1_2_3(r):
+    is_negative = False
+    if r < 0:
+        r = -r
+        is_negative = True
     r = bin(r)[2:]
     r += str(sum(int(i) for i in r) % 2)
     r += str(sum(int(i) for i in r) % 2)
+    if is_negative:
+        return -int(r, 2)
     return int(r, 2)
 
 
 def func_4(r):
+    is_negative = False
+    if r < 0:
+        r = -r
+        is_negative = True
     r = bin(r)[2:]
     if r.startswith('1'):
         r = r[1:]
@@ -13,10 +23,16 @@ def func_4(r):
         r = '10' + r
     else:
         r = '1' + r + '0'
+    if is_negative:
+        return -int(r, 2)
     return int(r, 2)
 
 
 def func_5(r):
+    is_negative = False
+    if r < 0:
+        r = -r
+        is_negative = True
     r = bin(r)[2:]
     if sum(int(i) for i in r) % 2 == 0:
         r += '0'
@@ -24,6 +40,8 @@ def func_5(r):
     else:
         r += '1'
         r = '11' + r[2:]
+    if is_negative:
+        return -int(r, 2)
     return int(r, 2)
 
 
@@ -37,3 +55,13 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+"""
+answers:
+1. 102
+2. 108
+3. 31
+4. 444
+5. 8
+"""
