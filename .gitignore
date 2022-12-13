@@ -172,3 +172,5 @@ problems/
 *.pptx
 *.xls
 *.xlsx
+
+*.DS_Store
