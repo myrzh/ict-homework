@@ -2,11 +2,7 @@ import itertools
 from pprint import pprint
 
 
-COMMANDS_DICT = {
-    '1': '+2',
-    '2': '*2',
-    '3': '*3'
-}
+COMMANDS_DICT = {"1": "+2", "2": "*2", "3": "*3"}
 
 FIRST_NUMB = 2
 LAST_NUMB = 28
@@ -29,13 +25,13 @@ def execute_program(program: str):
             break
     return path
 
-
+ 
 def main():
     combinations = []
     for command_length in range(1, 15):
-        current_combinations = list(itertools.product('123', repeat=command_length))
+        current_combinations = list(itertools.product("123", repeat=command_length))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # main()
-    print(execute_program('112323232321231231231223131231232312313'))
+    print(execute_program("112323232321231231231223131231232312313"))
