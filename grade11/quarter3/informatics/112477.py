@@ -1,1 +1,1 @@
-print(''.join(sorted(list(set(input())))))
+print(len(set(input())))
