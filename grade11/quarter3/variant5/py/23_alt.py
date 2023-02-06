@@ -25,7 +25,7 @@ def execute_program(program: str):
             break
     return path
 
- 
+
 def main():
     combinations = []
     for command_length in range(1, 15):

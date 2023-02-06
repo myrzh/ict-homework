@@ -13,6 +13,7 @@ def greatest_divider(numb):
         if numb % i == 0:
             return i
 
+
 count = 0
 number = 550001
 while True:

@@ -21,9 +21,9 @@ programs = get_combinations()
 for j in programs:
     tpr = chit(j)
     if 6 in tpr and 28 in tpr:
-        iv.append(j[:tpr.index(28)])
+        iv.append(j[: tpr.index(28)])
         # print(j,end=" ")
         # print(tpr)
 
-print(*set(iv), sep='\n')
+print(*set(iv), sep="\n")
 print(len(set(iv)))

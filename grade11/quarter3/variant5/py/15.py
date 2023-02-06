@@ -1,5 +1,6 @@
 for a in range(0, 1000):
     fail = False
+
     def func(a_internal):
         global fail
         for x in range(0, 1000):
@@ -8,6 +9,7 @@ for a in range(0, 1000):
                 if not f:
                     fail = True
                     return
+
     func(a)
     if not fail:
         print(a)

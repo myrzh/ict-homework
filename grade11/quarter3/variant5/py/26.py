@@ -1,5 +1,5 @@
 array = []
-with open('26.txt') as f:
+with open("26.txt") as f:
     space, num_of_files = map(int, f.readline().strip().split())
     for line in f.readlines():
         array.append(int(line.strip()))

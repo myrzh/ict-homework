@@ -1,5 +1,5 @@
 array = []
-with open('17.txt') as f:
+with open("17.txt") as f:
     for line in f.readlines():
         array.append(int(line.strip()))
 

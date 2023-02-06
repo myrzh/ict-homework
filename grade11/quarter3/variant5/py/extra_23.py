@@ -13,5 +13,21 @@ def get_combinations():
                                             for k in range(1, 4):
                                                 for l in range(1, 4):
                                                     for m in range(1, 4):
-                                                        combs.append((a, b, c, d, e, f, g, h, i, j, k, l, m))
+                                                        combs.append(
+                                                            (
+                                                                a,
+                                                                b,
+                                                                c,
+                                                                d,
+                                                                e,
+                                                                f,
+                                                                g,
+                                                                h,
+                                                                i,
+                                                                j,
+                                                                k,
+                                                                l,
+                                                                m,
+                                                            )
+                                                        )
     return combs
