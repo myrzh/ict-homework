@@ -10,6 +10,3 @@ for x in range(2):
                 f = func(x, y, z, w)
                 if not f:
                     print(x, y, z, w, int(f))
-
-
-print(14532 % 34)
