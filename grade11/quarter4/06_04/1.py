@@ -27,6 +27,3 @@ while counter < 6:
         start_number += 1
         continue
     start_number += 1
-
-
-l1 = 
