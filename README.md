@@ -1,3 +1,3 @@
 # ict-homework
 
-Задания по информатике. Делаю из спортивного интереса. Кто знает, тот поймёт.
+Computer science assignments. Tackling them for the thrill. Those in the know will get it.
